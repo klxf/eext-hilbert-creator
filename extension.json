@@ -2,8 +2,8 @@
 	"name": "eext-hilbert-creator",
 	"uuid": "9cc258d2dded489c852ced6a70113396",
 	"displayName": "Hilbert Creator",
-	"description": "Hilbert Creator",
-	"version": "1.2.2",
+	"description": "Hilbert Creator - 希尔伯特曲线生成器",
+	"version": "1.2.3",
 	"engines": {
 		"publisher": "Mr_Fang <klxf@vip.qq.com>",
 		"eda": "^2.2.35"
@@ -14,7 +14,7 @@
 		"url": ""
 	},
 	"categories": "Other",
-	"keywords": [],
+	"keywords": ["Hilbert"],
 	"images": {
 		"logo": "./images/logo.png"
 	},
@@ -31,8 +31,13 @@
 				"menuItems": [
 					{
 						"id": "pcb-hilbert-iframe",
-						"title": "开启",
+						"title": "生成希尔伯特曲线...",
 						"registerFn": "openIframe"
+					},
+					{
+						"id": "about",
+						"title": "v1.2.2",
+						"registerFn": ""
 					}
 				]
 			}
