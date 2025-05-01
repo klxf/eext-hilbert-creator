@@ -9,53 +9,64 @@
 	<body>
 		<div class="tablinks active" id="tab-1" onclick="openTab('counter-1')">计算线长</div>
 		<div class="tablinks" id="tab-2" onclick="openTab('counter-2')">计算线宽</div>
-		<div id="counter-1" class="tabcontent">
-			<!-- 阻值 -->
-			<label for="resistance-1">阻值（Ω）：</label>
-			<input type="number" id="resistance-1" name="resistance-1" value="5" min="0" step="0.01" />
+		<div id="counter-1" class="container tabcontent">
+			<div class="form-item">
+				<label for="resistance-1">阻值（Ω）：</label>
+				<input type="number" id="resistance-1" name="resistance-1" value="5" min="0" step="0.01" />
+			</div>
 
-			<!-- 铜片厚度 默认35 -->
-			<label for="thickness-1">铜片厚度（μm）：</label>
-			<select id="thickness-1" name="thickness-1">
-				<option value="12">12</option>
-				<option value="18">18</option>
-				<option value="35" selected>35</option>
-				<option value="70">70</option>
-			</select>
+			<div class="form-item">
+				<label for="thickness-1">铜片厚度（μm）：</label>
+				<select id="thickness-1" name="thickness-1">
+					<option value="12">12</option>
+					<option value="18">18</option>
+					<option value="35" selected>35</option>
+					<option value="70">70</option>
+				</select>
+			</div>
 
-			<!-- 线宽 -->
-			<label for="lineWidth-1">线宽（mm）：</label>
-			<input type="number" id="lineWidth-1" name="lineWidth-1" value="0.254" min="0" step="0.001" />
+			<div class="form-item">
+				<label for="lineWidth-1">线宽（mm）：</label>
+				<input type="number" id="lineWidth-1" name="lineWidth-1" value="0.254" min="0" step="0.001" />
+			</div>
 
-			<!-- 线长 -->
-			<label for="length-1">线长（mm）：</label>
-			<input type="number" id="length-1" name="length-1" value="0" disabled />
+			<div class="form-item">
+				<label for="length-1">线长（mm）：</label>
+				<input type="number" id="length-1" name="length-1" value="0" disabled />
+			</div>
 
 			<button id="calc-1">计算</button>
 		</div>
-		<div id="counter-2" class="tabcontent" style="display: none">
-			<!-- 阻值 -->
-			<label for="resistance-2">阻值（Ω）：</label>
-			<input type="number" id="resistance-2" name="resistance-2" value="5" min="0" step="0.01" />
+		<div id="counter-2" class="container tabcontent" style="display: none">
+			<div class="form-item">
+				<label for="resistance-2">阻值（Ω）：</label>
+				<input type="number" id="resistance-2" name="resistance-2" value="5" min="0" step="0.01" />
+			</div>
 
-			<!-- 铜片厚度 默认35 -->
-			<label for="thickness-2">铜片厚度（μm）：</label>
-			<select id="thickness-2" name="thickness-2">
-				<option value="12">12</option>
-				<option value="18">18</option>
-				<option value="35" selected>35</option>
-				<option value="70">70</option>
-			</select>
+			<div class="form-item">
+				<label for="thickness-2">铜片厚度（μm）：</label>
+				<select id="thickness-2" name="thickness-2">
+					<option value="12">12</option>
+					<option value="18">18</option>
+					<option value="35" selected>35</option>
+					<option value="70">70</option>
+				</select>
+			</div>
 
-			<!-- 线长 -->
-			<label for="length-2"
-				>线长（mm）：<span id="select-tip-icon"><span>应用于此</span></span></label
-			>
-			<input type="number" id="length-2" name="length-2" value="100" min="0" step="0.001" />
+			<div class="form-item">
+				<label for="length-2">
+					线长（mm）：
+					<span id="select-tip-icon">
+						<span>应用于此</span>
+					</span>
+				</label>
+				<input type="number" id="length-2" name="length-2" value="100" min="0" step="0.001" />
+			</div>
 
-			<!-- 线宽 -->
-			<label for="lineWidth-2">线宽（mm）：</label>
-			<input type="number" id="lineWidth-2" name="lineWidth-2" value="0" disabled />
+			<div class="form-item">
+				<label for="lineWidth-2">线宽（mm）：</label>
+				<input type="number" id="lineWidth-2" name="lineWidth-2" value="0" disabled />
+			</div>
 
 			<button id="calc-2">计算</button>
 			<button id="apply-2">应用于<span id="netName">HILBERT</span></button>

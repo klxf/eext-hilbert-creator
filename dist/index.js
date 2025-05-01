@@ -36,13 +36,16 @@ var edaEsbuildExportName = (() => {
   function activate(status, arg) {
   }
   function about() {
-    eda.sys_Dialog.showInformationMessage(displayName + " " + version + "\n" + description + "\n Github: https://github.com/klxf/eext-hilbert-creator", "\u5173\u4E8E");
+    eda.sys_Dialog.showInformationMessage(
+      displayName + " " + version + "\n" + description + "\n Github: https://github.com/klxf/eext-hilbert-creator",
+      "\u5173\u4E8E"
+    );
   }
   function openIframe() {
-    eda.sys_IFrame.openIFrame("/iframe/index.html", 300, 600);
+    eda.sys_IFrame.openIFrame("/iframe/index.html", 300, 345);
   }
   function openCounter1Iframe() {
-    eda.sys_IFrame.openIFrame("/iframe/counter_1.html", 300, 465);
+    eda.sys_IFrame.openIFrame("/iframe/counter_1.html", 340, 300);
   }
   return __toCommonJS(src_exports);
 })();

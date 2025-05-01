@@ -28,9 +28,9 @@ export function about(): void {
 }
 
 export function openIframe(): void {
-	eda.sys_IFrame.openIFrame('/iframe/index.html', 300, 600);
+	eda.sys_IFrame.openIFrame('/iframe/index.html', 300, 345);
 }
 
 export function openCounter1Iframe(): void {
-	eda.sys_IFrame.openIFrame('/iframe/counter_1.html', 300, 465);
+	eda.sys_IFrame.openIFrame('/iframe/counter_1.html', 340, 300);
 }
