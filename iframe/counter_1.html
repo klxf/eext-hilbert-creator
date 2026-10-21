@@ -16,7 +16,7 @@
 			</div>
 
 			<div class="form-item">
-				<label for="thickness-1">铜片厚度（μm）：</label>
+				<label for="thickness-1" title="按 20℃ 铜电阻率 0.01724 Ω·mm²/m 计算">铜片厚度（μm）：</label>
 				<select id="thickness-1" name="thickness-1">
 					<option value="12">12</option>
 					<option value="18">18</option>
@@ -44,7 +44,7 @@
 			</div>
 
 			<div class="form-item">
-				<label for="thickness-2">铜片厚度（μm）：</label>
+				<label for="thickness-2" title="按 20℃ 铜电阻率 0.01724 Ω·mm²/m 计算">铜片厚度（μm）：</label>
 				<select id="thickness-2" name="thickness-2">
 					<option value="12">12</option>
 					<option value="18">18</option>
@@ -93,7 +93,7 @@
 				const resistance = parseFloat(document.getElementById('resistance-1').value);
 				const thickness = parseFloat(document.getElementById('thickness-1').value);
 				const lineWidth = parseFloat(document.getElementById('lineWidth-1').value);
-				const resistivity = 18.51;
+				const resistivity = 17.24;
 				const ratio = (resistance * thickness) / resistivity;
 				const length = ratio * lineWidth * 1e3;
 				document.getElementById('length-1').value = length.toFixed(3);
@@ -103,7 +103,7 @@
 				const resistance = parseFloat(document.getElementById('resistance-2').value);
 				const thickness = parseFloat(document.getElementById('thickness-2').value);
 				const length = parseFloat(document.getElementById('length-2').value);
-				const resistivity = 18.51;
+				const resistivity = 17.24;
 				const lineWidth = (resistivity * length) / (resistance * thickness) / 1e3;
 				document.getElementById('lineWidth-2').value = lineWidth.toFixed(3);
 			});

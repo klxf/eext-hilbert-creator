@@ -42,7 +42,7 @@ var edaEsbuildExportName = (() => {
     );
   }
   function openIframe() {
-    eda.sys_IFrame.openIFrame("/iframe/index.html", 300, 345);
+    eda.sys_IFrame.openIFrame("/iframe/index.html", 380, 740);
   }
   function openCounter1Iframe() {
     eda.sys_IFrame.openIFrame("/iframe/counter_1.html", 340, 300);

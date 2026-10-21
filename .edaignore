@@ -1,8 +1,11 @@
 /.git/
+/.github/
 /.husky/
 /.vscode/
 !/build/
+/build/dist/
 /config/
+/docs/
 /coverage/
 /node_modules/
 /src/
